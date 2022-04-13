@@ -8,8 +8,12 @@
 </head>
 <body>
     
-    <form action="/uploadFile" method="post" enctype="multipart/form-data">
-        <input type="file" name="fileupload" />
+    <form action="/x/uploadFile" method="POST" enctype="multipart/form-data">
+        <!-- <label>Filename</label>
+        <input type="text" name="fileName">
+        <br><br> -->
+        
+        <input type="file" name="" />
         <button>upload</button>
       </form>
       <input id="filehash"type="text">
@@ -26,7 +30,7 @@
                 }
             };
             console.log(document.getElementById("filehash").value)
-            xhttp.open("GET", "download/"+document.getElementById("filehash").value, true);
+            xhttp.open("GET", "/x/download/"+document.getElementById("filehash").value, true);
             xhttp.send();
         }
     </script>

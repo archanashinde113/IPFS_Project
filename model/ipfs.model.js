@@ -1,12 +1,10 @@
 const mongoose = require('mongoose');
 
 const imageSchema = new mongoose.Schema({
-    // fileName: {
-    //     type : String
-    // },
-    // url: {
-    //     type : String
-    // },
+    fileName: {
+        type : String
+    },
+   
     fileHash: {
         type : String
     }
