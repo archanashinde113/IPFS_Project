@@ -1,6 +1,6 @@
 const express = require('express')
 const path = require('path')
-var multer  = require('multer')
+//var multer  = require('multer')
 var ipfsAPI = require('ipfs-api')
 //var upload = multer({ dest: '.uploads/' })
 const fs =require('fs');
