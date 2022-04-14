@@ -21,7 +21,7 @@ module.exports = {
       
         const fileName = req.body.fileName;
         console.log(req.file);
-        var data = new Buffer(fs.readFileSync(req.file.path));
+        var data = new Buffer.from(fs.readFileSync(req.file.path));
         // var data = new Buffer(fs.readFileSync('./abc.svg.png'));
         ipfs.add(data, function (err,file){
             if(err){
