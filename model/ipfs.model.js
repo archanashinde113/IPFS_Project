@@ -8,7 +8,9 @@ const imageSchema = new mongoose.Schema({
     fileHash: {
         type : String
     }
-}) 
+},
+{timestamps:true}
+) 
 
 module.exports = mongoose.model('ipfs', imageSchema)
 
